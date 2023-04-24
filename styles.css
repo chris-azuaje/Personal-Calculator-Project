@@ -1,0 +1,54 @@
+body {
+  background-color: #191970;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: #191970;
+  border-radius: 15px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.356);
+  margin-top: 90px;
+  padding: 1rem;
+}
+
+.displayBox {
+  display: block;
+  background-color: #191970;
+  text-align: end;
+  width: 41rem;
+  height: 8rem;
+  font-size: 6rem;
+}
+
+input {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn {
+  width: 10rem;
+  height: 6rem;
+  background-color: #191970;
+  font-size: x-large;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  border: 6px solid orange;
+  background-color: blueviolet;
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
+input,
+button {
+  border-radius: 15px;
+}
+
+.borderStyle {
+  border: 3px solid white;
+}

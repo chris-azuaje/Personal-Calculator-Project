@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1fd1ffd6f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="calculator borderStyle">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input
+              class="displayBox borderStyle"
+              type="text"
+              id="result"
+              disabled
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn borderStyle" value="" onClick="clearScreen()">
+              <i class="fa-solid fa-c" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="%" onClick="percent()">
+              <i class="fa-light fa-percent" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="<" onclick="remove()">
+              <i class="fa-solid fa-delete-left" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="*" onclick="display('*')">
+              <i class="fas fa-times" style="color: #ffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn borderStyle" value="7" onclick="display('7')">
+              <i class="fa-solid fa-7" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="8" onclick="display('8')">
+              <i class="fa-solid fa-8" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="9" onclick="display('9')">
+              <i class="fa-solid fa-9" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="/" onclick="display('/')">
+              <i class="fa-solid fa-divide" style="color: #ffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn borderStyle" value="4" onclick="display('4')">
+              <i class="fa-solid fa-4" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="5" onclick="display('5')">
+              <i class="fa-solid fa-5" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="6" onclick="display('6')">
+              <i class="fa-solid fa-6" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="-" onClick="display('-')">
+              <i class="fa-solid fa-minus" style="color: #ffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn borderStyle" value="1" onclick="display('1')">
+              <i class="fa-solid fa-1" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="2" onclick="display('2')">
+              <i class="fa-solid fa-2" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="3" onclick="display('3')">
+              <i class="fa-solid fa-3" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="+" onclick="display('+')">
+              <i class="fa-solid fa-plus" style="color: #ffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn borderStyle" value="+/-" onclick="negate()">
+              <i class="fa-solid fa-plus-minus" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="0" onclick="display('0')">
+              <i class="fa-solid fa-0" style="color: #ffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="." onclick="display('.')">
+              <i class="fa-solid fa-circle fa-2xs" style="color: #ffffff"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn borderStyle" value="=" onclick="calculate()">
+              <i class="fa-solid fa-equals" style="color: #ffff"></i>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
